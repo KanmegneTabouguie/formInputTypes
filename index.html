@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="images/x-icon" href="https://img.icons8.com/?size=1x&id=aRrUyfRx3SYb&format=png" />
+    <title>Forms</title>
+</head>
+<body>
+  <div class="topnav"  id="myTopnav">
+    <img  class="logo" src="https://cdn-icons-png.flaticon.com/128/3447/3447545.png" width="50" height="50">
+    <a class="active" href="#section1">section1</a>
+    <a href="#section2">section2</a>
+    <a href="#section3">section3</a>
+    <a href="#section4">section4</a>
+    <a href="#section5">section5</a>
+    <a href="#section6">section6</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+
+
+
+<!---------------------------------------------------- ---form contact-------------------------------------- -->
+
+    <section id="section1">
+        <div class="container">
+            <div class="form-one">
+                <h1>Contact form</h1>
+            <form id="contact-form" action="#"  method="POST">
+          
+              
+             
+                <label for="fname">First Name</label><input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+          
+             
+              
+                <label for="lname">Last Name</label> <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+          
+             
+              
+                <label for="country">Country</label> <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select><br>
+          
+              
+              
+              <label for="subject">Subject</label> <textarea id="subject" name="subject" placeholder="Write something.." height="50" width="50"></textarea>
+          <br>
+        
+              <input type="submit" value="Submit">
+          
+            </form>
+            </div>
+
+               
+                <div class="stored-data">
+                    <h2>Retrieved data stored in local storage:</h2>
+                    <ul id="data-list"></ul>
+                    
+                  </div>
+
+               </div>
+
+    </section>
+
+<hr>
+
+
+<section id="section2">
+    <div class="container">
+        <div class="form-one">
+            <h1>Contact form</h1>
+        <form action="#">
+      
+          
+         
+            <label for="password">Password:</label><input type="password" id="password" name="password" placeholder="Your password."><br>
+      
+         
+          
+            <label for="email">Email</label> <input type="email" id="email" name="email" placeholder="enter youe email.."><br>
+      
+         
+            <label for="number">Number</label> <input type="number" id="number" name="number" placeholder="enter a number.."><br>
+
+          
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+           <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+           <label for="vehicle2"> I have a car</label><br>
+           <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+           <label for="vehicle3"> I have a boat</label><br>
+      
+          
+         <p>Please select your age:</p>
+        <input type="radio" id="age1" name="age" value="30">
+       <label for="age1">0 - 30</label><br>
+       <input type="radio" id="age2" name="age" value="60">
+       <label for="age2">31 - 60</label><br>  
+       <input type="radio" id="age3" name="age" value="100">
+      <label for="age3">61 - 100</label><br><br>
+
+      <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday">
+
+
+       <label for="myfile">Select a file:</label> <input type="file" id="myfile" name="myfile"><br><br>
+
+
+       <label for="points">Points (between 0 and 10):</label><input type="range" id="points" name="points" min="0" max="10"><br>
+
+       <input type="hidden" id="custId" name="custId" value="24">
+
+          <input type="submit" value="Submit" />
+
+          <input type="reset" value="Reset" />
+
+      
+        </form>
+        </div>
+
+           
+            <div class="form-two">
+                
+              </div>
+
+           </div>
+
+</section>
+
+<hr>
+
+
+
+
+
+<section id="section3">
+    <div class="container">
+        <div class="form-one">
+            <h1>Contact form</h1>
+        <form action="#">
+      
+          
+         
+            <label for="w3review">Review of W3Schools:</label><textarea id="w3review" name="w3review" rows="4" cols="50">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+            <br>
+            
+         
+<label for="dropdown"> Select Dropdown:</label>
+<select name="dropdownField">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+  </select><br>
+
+
+  <label for="multiselectField"> multiselectField:</label><br>
+  <select name="multiSelectField" multiple>
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select><br>
+  
+
+  <label for="homepage">Add your homepage:</label><input type="url" id="homepage" name="homepage"><br>
+
+  <label for="phone">Enter your phone number:</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+
+
+<label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+
+
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch"><br>
+
+
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt"><br>
+
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth"><br>
+
+
+
+
+          
+         <input type="reset" value="Reset" />
+          <input type="submit" value="Submit">
+      
+        </form>
+        </div>
+
+           
+            <div class="form-two">
+                
+              </div>
+
+           </div>
+
+</section>
+
+<hr>
+
+
+
+<section id="section4">
+    <div class="container">
+        <div class="form-one">
+            <h1>Contact form</h1>
+        <form action="#">
+      
+          
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week"><br>
+
+            <label for="appt">Select a time range:</label>
+            <input type="time" name="timeRangeField" min="09:00" max="18:00" step="900"><br>
+
+            
+            <label for="monthYearField">monthYearField:</label>
+            <input type="month" name="monthYearField"><br>
+
+
+            <label for="weekYearField">weekYearField:</label>
+            <input type="week" name="weekYearField"><br>
+
+
+
+            <label for="searchField">searchField:</label>
+            <input type="search" name="searchField" placeholder="Search..."><br>
+
+
+
+            <label for="dateTimeField">dateTimeField</label>
+            <input type="datetime-local" name="dateTimeField"><br>
+
+
+            <label for="imageField">imageField</label>
+            <input type="file" name="imageField" accept="image/*"><br>
+
+
+            <label for="colorPickerField">colorPickerField</label>
+            <input type="color" name="colorPickerField"><br>
+
+
+
+            <label for="timeField">timeField</label>
+            <input type="time" name="timeField" step="900"><br>
+
+
+
+            <label for="monthField">monthField</label>
+            <input type="month" name="monthField" min="2022-01" max="2022-12"><br>
+
+
+            <label for="rangeField">rangeField</label>
+            <input type="range" name="rangeField" min="0" max="100" step="5"><br>
+
+
+            <label for="weekField">weekField</label>
+            <input type="week" name="weekField" min="2022-W01" max="2022-W52"><br>
+
+
+
+
+            <label for="phoneField">phoneField</label>
+            <input type="tel" name="phoneField" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+
+
+            <label for="numericField">numericField</label>
+            <input type="number" name="numericField" min="0" max="100" step="1"><br>
+
+
+            <label for="fileField">fileField</label>
+            <input type="file" name="fileField" multiple><br>
+
+
+
+            <label for="monthField">monthField</label>
+            <input type="month" name="monthField" min="2022-01" max="2023-12"><br>
+
+
+            
+            <input type="reset" value="reset"/>
+          <input type="submit" value="Submit"/>
+      
+        </form>
+        </div>
+
+           
+            <div class="form-two">
+                
+              </div>
+
+           </div>
+
+</section>
+
+<hr>
+
+
+
+<section  id="section5">
+    <div class="container">
+        <div class="form-one">
+            <h1>Contact form</h1>
+        <form action="#">
+      
+            <label for="dateField">dateField</label>
+            <input type="date" name="dateField" min="2022-01-01" max="2022-12-31"><br>
+
+            
+            <label for="emailField">emailField</label>
+            <input type="email" name="emailField" multiple><br>
+
+
+            <label for="toggleSwitchField" class="toggle-switch">toggleSwitchField</label><br>
+            <input type="checkbox" id="toggleSwitchField" name="toggleSwitchField">
+ 
+
+
+            
+             <label for="timeField" class="timeField">timefield</label>
+             <input type="time" name="timeField" step="3600" pattern="[0-9]{2}:[0-9]{2}"><br>
+
+
+
+         <label for="progressField" class="progressField">progressfield</label>
+             <progress name="progressField" value="50" max="100"></progress><br>
+
+          
+          
+
+             <label for="meterField" class="meterField">Meterfield</label>
+             <meter name="meterField" value="0.75" min="0" max="1"></meter><br>
+
+
+
+             <output name="outputField">Result: </output>
+<input type="range" name="inputRange" oninput="outputField.value = inputRange.value"><br>
+
+
+
+<label for="weekField" class="weekField">weekField</label>
+<input type="week" name="weekField" min="2022-W01" max="2022-W52"><br>
+
+
+
+
+<label for="urlField" class="urlField">urlField</label>
+<input type="url" name="urlField" autofocus><br>
+
+
+
+<label for="phoneField" class="phoneField">phoneField</label>
+<input type="tel" name="phoneField" placeholder="+1 (555) 123-4567"><br>
+
+
+
+<label for="dateTimeField" class="dateTimeField">dateTimeField</label>
+<input type="datetime-local" name="dateTimeField"><br>
+
+
+          
+
+<label for="monthField" class="monthField">monthField</label>
+<input type="month" name="monthField" min="2022-01" max="2022-12"><br>
+
+
+<label for="stepField" class="stepField">stepField</label>
+<input type="number" name="stepField" step="0.5"><br>
+
+
+<label for="fileField" class="fileField">fileField</label>
+<input type="file" name="fileField" accept=".jpg, .png, .gif"><br>
+
+
+
+<label for="timeField" class="timeField">timeField</label>
+<input type="time" name="timeField" step="900" pattern="[0-9]{2}:[0-9]{2} [APap][mM]"><br>
+
+    
+
+
+<label for="weekField" class="weekField">weekField</label>
+<input type="week" name="weekField" min="2022-W01" max="2023-W52"><br>
+
+
+
+
+<label for="searchField" class="searchField">searchField</label>
+<input type="search" name="searchField" placeholder="Search...">
+<button type="reset" onclick="searchField.value = ''">Clear</button><br>
+
+
+
+<label for="colorField" class="colorField">colorField</label>
+<input type="color" name="colorField" list="colorPalette">
+<datalist id="colorPalette">
+  <option>#ff0000</option>
+  <option>#00ff00</option>
+  <option>#0000ff</option>
+</datalist><br>
+
+
+<label for="timeField" class="timeField">timeField</label>
+<input type="time" name="timeField" step="1800" autocomplete="on"><br>
+
+
+<label for="weekField" class="weekField">weekField</label>
+<input type="week" name="weekField" autocomplete="on"><br>
+
+
+
+<label for="colorField" class="colorField">colorField</label>
+<input type="color" name="colorField" value="#ff0000" style="opacity: 0.5;"><br>
+
+
+
+
+<label for="searchField" class="searchField">searchField</label>
+<input type="search" name="searchField" autofocus autocomplete="on"><br>
+
+
+
+<label for="rangeField" class="rangeField">rangeField</label>
+<input type="range" name="rangeField" min="0" max="100" step="5" list="tickMarks">
+<datalist id="tickMarks">
+  <option value="0" label="0%">
+  <option value="25">
+  <option value="50">
+  <option value="75">
+  <option value="100" label="100%">
+</datalist><br>
+
+
+
+<label for="dateField" class="dateField">dateField</label>
+<input type="date" name="dateField" min="2023-01-01"><br>
+
+
+
+<label for="emailField" class="emailField">emailField</label>
+<input type="email" name="emailField" multiple list="emailSuggestions">
+<datalist id="emailSuggestions">
+  <option value="john@example.com">
+  <option value="jane@example.com">
+  <option value="info@example.com">
+</datalist><br>
+
+
+
+
+<label for="numberField" class="numberField">numberField</label>
+<input type="number" name="numberField" min="1" max="10" step="1" required
+       oninvalid="this.setCustomValidity('Please enter a number between 1 and 10')"
+       oninput="this.setCustomValidity('')"><br>
+
+
+
+<label for="fileField" class="fileField">fileField</label>
+<input type="file" name="fileField" accept=".jpg, .png, .gif" maxsize="1048576"><br>
+
+
+
+<label for="dateField" class="dateField">dateField</label>
+<input type="date" name="dateField" autocomplete="bday"><br>
+
+
+
+
+          <input type="reset" value="reset">
+          <input type="submit" value="Submit">
+      
+        </form>
+        </div>
+
+           
+            <div class="form-two">
+                
+              </div>
+
+           </div>
+
+</section>
+
+<hr>
+
+
+<section  id="section6">
+    <div class="container">
+        <div class="form-one">
+            <h1>Contact form</h1>
+        <form action="#">
+      
+          
+            <label for="searchField" class="searchField">searchField</label>
+            <input type="search" name="searchField">
+<button type="submit">Search</button><br>
+
+
+<label for="rangeField" class="rangeField">rangeField</label>
+<input type="range" name="rangeField" min="0" max="100" step="10">
+<label for="rangeField">Value:</label>
+<span id="rangeValue"></span><br>
+
+<script>
+  const rangeField = document.querySelector('input[name="rangeField"]');
+  const rangeValue = document.getElementById('rangeValue');
+
+  rangeField.addEventListener('input', () => {
+    rangeValue.textContent = rangeField.value;
+  });
+</script>
+
+
+
+<label for="timeField" class="timeField">timeField</label>
+<input type="time" name="timeField" step="1800">
+<select name="meridianField">
+  <option value="AM">AM</option>
+  <option value="PM">PM</option>
+</select><br>
+
+
+
+<label for="searchField" class="searchField">searchField</label>
+<input type="search" name="searchField" list="searchResults">
+<datalist id="searchResults">
+  <option value="Result 1">
+  <option value="Result 2">
+  <option value="Result 3">
+</datalist><br>
+
+    
+
+<label for="emailField" class="emailField">emailField</label>
+<input type="email" name="emailField" autocomplete="email"><br>
+
+
+
+<label for="dateField" class="dateField">dateField</label>
+<input type="date" name="dateField" week><br>
+
+
+
+
+<label for="phoneField" class="phoneField">phoneField</label>
+<input type="tel" name="phoneField" list="countryCodes">
+<datalist id="countryCodes">
+  <option value="+1">USA</option>
+  <option value="+44">UK</option>
+  <option value="+61">Australia</option>
+</datalist><br>
+
+
+
+
+
+<label for="colorField" class="colorField">colorField</label>
+<input type="color" name="colorField">
+<input type="range" min="0" max="100" step="1" onchange="colorField.style.opacity = this.value / 100;"><br>
+
+
+
+
+
+<label for="radioField" class="radioField">radioField</label>
+<input type="radio" id="radio1" name="radioField" value="option1">
+<label for="radio1"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384066.png" alt="Icon 1"></label>
+<input type="radio" id="radio2" name="radioField" value="option2">
+<label for="radio2"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384066.png" alt="Icon 2"></label>
+
+
+
+
+<label for="checkboxGroup" class="checkboxGroup">checkboxGroup</label>
+<fieldset>
+    <legend>Options:</legend>
+    <input type="checkbox" id="checkbox1" name="checkboxGroup" value="option1">
+    <label for="checkbox1">Option 1</label><br>
+    
+    <input type="checkbox" id="checkbox2" name="checkboxGroup" value="option2">
+    <label for="checkbox2">Option 2</label><br>
+  </fieldset><br>
+  
+
+
+
+<label for="rangeField" class="rangeField">Range Input with Value Display:
+</label>
+<input type="range" name="rangeField" min="0" max="100" step="1" onchange="rangeValue.value = rangeField.value">
+<output name="rangeValue" for="rangeField">50</output><br>
+
+
+<label for="fileField" class="fileField">File Upload Input with Preview:
+</label>
+<input type="file" name="fileField" accept="image/*" onchange="previewImage(event)">
+<img id="preview" src="#" alt="Preview Image"><br>
+
+<script>
+  function previewImage(event) {
+    const preview = document.getElementById('preview');
+    preview.src = URL.createObjectURL(event.target.files[0]);
+  }
+</script>
+
+
+
+
+<label for="dateField" class="dateField">Date Input with Year Range:
+</label>
+<input type="date" name="dateField" min="2000-01-01" max="2025-12-31"><br>
+
+
+
+
+<div class="input-with-icon">
+    <label for="textInput" class="textInput">Input with Placeholder and Icon:
+    </label>
+    <input type="text" name="textInput" placeholder="Enter text">
+    <i class="icon"></i>
+  </div><br>
+  
+  <style>
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-with-icon input[type="text"] {
+    padding-right: 30px;
+  }
+  
+  .input-with-icon .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    /* Add your icon styles here */
+  }
+  </style>
+  
+
+<div class="password-input">
+    <label for="passwordField" class="passwordField">passwordField</label>
+    <input type="password" name="passwordField">
+    <i class="toggle-password"></i>
+  </div><br>
+  
+  <style>
+  .password-input .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    /* Add your toggle icon styles here */
+  }
+  </style>
+  
+  <script>
+  const togglePassword = document.querySelector('.toggle-password');
+  const passwordField = document.querySelector('input[name="passwordField"]');
+  
+  togglePassword.addEventListener('click', () => {
+    const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordField.setAttribute('type', type);
+  });
+  </script>
+  
+
+
+<label for="textField" class="textField">Input with Autocomplete and Suggestions:
+</label>
+<input type="text" name="textField" autocomplete="on" list="suggestions">
+<datalist id="suggestions">
+  <option value="Option 1">
+  <option value="Option 2">
+  <option value="Option 3">
+</datalist><br>
+
+
+
+<label for="dateField" class="dateField">Date Input with Inline Date Picker:
+</label>
+<input type="date" name="dateField" class="date-picker"><br>
+<script>
+  const datePickers = document.querySelectorAll('.date-picker');
+  datePickers.forEach(datePicker => {
+    datePicker.addEventListener('focus', () => {
+      datePicker.setAttribute('type', 'date');
+    });
+    datePicker.addEventListener('blur', () => {
+      datePicker.removeAttribute('type');
+    });
+  });
+</script>
+
+
+
+<label for="textareaField" class="textareaField">textareaField</label>
+<textarea name="textareaField" rows="4" cols="50"></textarea><br>
+
+
+
+
+<label for="rangeField" class="rangeField">Range Input with Styling:
+</label>
+<input type="range" name="rangeField" min="0" max="100" step="1" class="styled-range"><br>
+
+
+
+<label for="textField" class="textField">Input with Validation Pattern:
+</label>
+<input type="text" name="textField" pattern="[A-Za-z]{3}"><br>
+
+
+
+<label for="textField" class="textField">Required Input with Custom Validation Message:
+</label>
+<input type="text" name="textField" required
+  oninvalid="this.setCustomValidity('Please enter a value.')"
+  oninput="this.setCustomValidity('')"><br>
+
+
+
+  <label for="fileField" class="custom-file-upload">
+    <i class="icon"></i> Choose File
+  </label>
+  <input type="file" id="fileField" name="fileField" style="display: none;"><br>
+  
+
+
+
+
+
+
+          <input type="reset" value="reset">
+          <input type="submit" value="Submit">
+      
+        </form>
+        </div>
+
+           
+            <div class="form-two">
+                
+              </div>
+
+           </div>
+
+</section>
+<section>
+<div class="footer">
+    <p>Made by KTAYL @2023 Web developer to become</p>
+  </div>
+</section>
+   <script src="script.js"></script>
+    
+</body>
+</html>
